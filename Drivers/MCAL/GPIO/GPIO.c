@@ -13,7 +13,7 @@ void DIO_voidInitPort(unsigned char port){
 						GPIO_PORTA_AMSEL &=~0xFF;
 						GPIO_PORTA_AFSEL &=~0xFF;
 						GPIO_PORTA_PCTL &=~0xFFFFFFFF;
-				    GPIO_PORTF_LOCK = GPIO_LOCK_KEY;
+				    GPIO_PORTA_LOCK = GPIO_LOCK_KEY;
 		    		GPIO_PORTA_CR   |= 0xFF;
 						GPIO_PORTA_DEN |= 0xFF;
             break;
@@ -21,7 +21,7 @@ void DIO_voidInitPort(unsigned char port){
 						GPIO_PORTB_AMSEL &=~0xFF;
 						GPIO_PORTB_AFSEL &=~0xFF;
 						GPIO_PORTB_PCTL &=~0xFFFFFFFF;
-				    GPIO_PORTF_LOCK = GPIO_LOCK_KEY;
+				    GPIO_PORTB_LOCK = GPIO_LOCK_KEY;
 			    	GPIO_PORTB_CR   |= 0xFF;
 						GPIO_PORTB_DEN   |= 0xFF;
             break;
@@ -29,7 +29,7 @@ void DIO_voidInitPort(unsigned char port){
 						GPIO_PORTC_AMSEL &=~0xFF;
 						GPIO_PORTC_AFSEL &=~0xFF;
 						GPIO_PORTC_PCTL &=~0xFFFFFFFF;
-			    	GPIO_PORTF_LOCK = GPIO_LOCK_KEY;
+			    	GPIO_PORTC_LOCK = GPIO_LOCK_KEY;
 				    GPIO_PORTC_CR   |= 0xFF;
 						GPIO_PORTC_DEN |= 0xFF;
             break;
@@ -37,7 +37,7 @@ void DIO_voidInitPort(unsigned char port){
 						GPIO_PORTD_AMSEL &=~0xFF;
 						GPIO_PORTD_AFSEL &=~0xFF;
 						GPIO_PORTD_PCTL &=~0xFFFFFFFF;
-				    GPIO_PORTF_LOCK = GPIO_LOCK_KEY;
+				    GPIO_PORTD_LOCK = GPIO_LOCK_KEY;
 				    GPIO_PORTD_CR   |= 0xFF;
 						GPIO_PORTD_DEN |= 0xFF;
             break;
@@ -45,8 +45,8 @@ void DIO_voidInitPort(unsigned char port){
 						GPIO_PORTE_AMSEL &=~0xFF;
 						GPIO_PORTE_AFSEL &=~0xFF;
 						GPIO_PORTE_PCTL &=~0xFFFFFFFF;
-				    GPIO_PORTF_LOCK = GPIO_LOCK_KEY;
-			     	GPIO_PORTC_CR   |= 0x3F;
+				    GPIO_PORTE_LOCK = GPIO_LOCK_KEY;
+			     	GPIO_PORTE_CR   |= 0x3F;
 						GPIO_PORTE_DEN |=  0xFF;
             break;
         case PORTF:
